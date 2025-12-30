@@ -7,8 +7,8 @@ rightbtn.addEventListener("click", () => {
   let checkedItems = leftbox.querySelectorAll("input:checked");
 
   checkedItems.forEach(item => {
-    item.checked = false;
-    rightbox.append(item.parentElement);
+      rightbox.append(item.parentElement);
+      item.checked = false;
   });
 });
 
@@ -16,7 +16,7 @@ leftbtn.addEventListener("click", () => {
   let checkedItems = rightbox.querySelectorAll("input:checked");
 
   checkedItems.forEach(item => {
-    item.checked = false;
-    leftbox.append(item.parentElement);
+      leftbox.append(item.parentElement);
+      item.checked = false;
   });
 });
